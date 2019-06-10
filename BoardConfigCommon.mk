@@ -16,7 +16,7 @@
 
 BOARD_VENDOR := xiaomi
 
-PLATFORM_PATH := device/xiaomi/msm8998-common
+PLATFORM_PATH := device/xiaomi/msm8998-sagit
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
@@ -44,7 +44,7 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8998
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sagit
 
 BOARD_KERNEL_CMDLINE := androidboot.console=ttyMSM0 androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3
@@ -214,4 +214,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from proprietary files
-include vendor/xiaomi/msm8998-common/BoardConfigVendor.mk
+include vendor/xiaomi/msm8998-sagit/BoardConfigVendor.mk

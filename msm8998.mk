@@ -170,7 +170,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8998
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sagit
 
 # For config.fs
 PRODUCT_PACKAGES += \
@@ -229,7 +229,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_msm8998
+    android.hardware.light@2.0-service.xiaomi_sagit
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -392,4 +392,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Call the proprietary setup
-$(call inherit-product, vendor/xiaomi/msm8998-common/msm8998-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/msm8998-sagit/msm8998-sagit-vendor.mk)
